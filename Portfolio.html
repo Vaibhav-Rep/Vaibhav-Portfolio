@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaibhav Kumar - Personal Portfolio</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #D1E8FF; /* A richer light blue background */
+        }
+        /* Custom scrollbar for a more modern look (optional) */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body class="text-gray-800 antialiased">
+
+    <!-- =========== HEADER / NAVIGATION =========== -->
+    <header class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Vaibhav Kumar -->
+            <a href="#" class="text-2xl font-bold text-gray-900">Vaibhav Kumar-Portfolio</a>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#about" class="text-gray-600 hover:text-indigo-600 transition duration-300">About</a>
+                <a href="#projects" class="text-gray-600 hover:text-indigo-600 transition duration-300">Projects</a>
+                
+                <a href="#contact" class="bg-indigo-600 text-white px-4 py-2 rounded-full hover:bg-indigo-700 transition duration-300 shadow-sm">Contact</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#about" class="block py-2 text-gray-600 hover:text-indigo-600">About</a>
+            <a href="#projects" class="block py-2 text-gray-600 hover:text-indigo-600">Projects</a>
+        
+            <a href="#contact" class="block mt-2 bg-indigo-600 text-white text-center px-4 py-2 rounded-full hover:bg-indigo-700">Contact</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12 md:py-20">
+
+        <!-- =========== HERO SECTION =========== -->
+        <section id="home" class="text-center">
+            <div class="max-w-3xl mx-auto">
+                <!-- EDIT YOUR PROFESSION/TAGLINE HERE -->
+                <h1 class="text-4xl md:text-6xl font-bold text-gray-900 leading-tight mb-4">
+                    Hi, I'm Vaibhav Kumar<br> A Passionate <span class="text-indigo-600">Web Developer & Data Analytics</span>
+                </h1>
+                <!-- EDIT YOUR SHORT BIO HERE -->
+                <p class="text-lg md:text-xl text-gray-600 mb-8">
+                    I design and develop clean, efficient, and data-driven web solutions that turn complex problems into seamless user experiences. Combining my skills in web development and data analytics, I create scalable applications that empower smarter decisions and measurable impact.
+                </p>
+                <div class="flex justify-center items-center space-x-4">
+                    <!-- EDIT YOUR SOCIAL MEDIA LINKS HERE -->
+                    <a href="https://github.com/Vaibhav-Rep?tab=repositories" target="_blank" class="text-gray-500 hover:text-indigo-600 transition duration-300">
+                        <i data-lucide="github" class="w-8 h-8"></i>
+                    </a>
+                    <a href="www.linkedin.com/in/vaibhavkumar2611" target="_blank" class="text-gray-500 hover:text-indigo-600 transition duration-300">
+                        <i data-lucide="linkedin" class="w-8 h-8"></i>
+                    </a>
+                    <a href="https://x.com/Vaibhav26113?t=xugKipdJw2XnVwDfh2kY8A&s=09" target="_blank" class="text-gray-500 hover:text-indigo-600 transition duration-300">
+                        <i data-lucide="twitter" class="w-8 h-8"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========== ABOUT ME SECTION =========== -->
+        <section id="about" class="py-20 md:py-32">
+            <div class="grid md:grid-cols-5 gap-12 items-center">
+                <div class="md:col-span-2">
+                    <!-- USE A PROFESSIONAL HEADSHOT IMAGE. 1:1 Aspect ratio is best. -->
+                    <img src="https://drive.google.com/file/d/1FB_zzvL2_xuzrRY68eTjy7aQKVs6YwT4/view?usp=drive_link" alt="A professional headshot of Vaibhav Kumar" class="rounded-full shadow-2xl w-full max-w-xs mx-auto">
+                </div>
+                <div class="md:col-span-3">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">About Me</h2>
+                    <!-- EDIT YOUR DETAILED BIO HERE -->
+                    <p class="text-gray-600 mb-4 leading-relaxed">
+                        I’m a passionate Web Developer and Data Analyst who loves turning ideas into impactful digital experiences and data-driven insights. With hands-on experience in building responsive web applications and analyzing complex datasets, I bridge the gap between design, development, and decision-making. My focus lies in creating scalable solutions using modern web technologies and leveraging tools like Power BI, Python, and SQL to uncover meaningful patterns that drive smarter business outcomes.
+                    </p>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        My goal is to always build products that provide pixel-perfect, performant experiences. I'm a lifelong learner, constantly exploring new technologies and frameworks to improve my craft. When I'm not coding, you can find me hiking, reading, or exploring local coffee shops.
+                    </p>
+                    <a href="#contact" class="bg-indigo-600 text-white px-6 py-3 rounded-full hover:bg-indigo-700 transition duration-300 inline-flex items-center shadow-md">
+                        Let's Connect <i data-lucide="arrow-right" class="w-5 h-5 ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========== PROJECTS SECTION =========== -->
+        <section id="projects" class="py-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Featured Projects</h2>
+                <p class="text-lg text-gray-600 mt-2">Here are some of the projects I'm proud of.</p>
+            </div>
+
+            <!-- Project Cards Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- EDIT PROJECT 1 DETAILS -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="https://drive.google.com/file/d/1bWz0c4CebXcxzKCfRG8cvrPnP398cwrK/view?usp=sharing" alt="Screenshot of Project One" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">E-Commerce Platform</h3>
+                        <p class="text-gray-600 mb-4">A full-featured online shopping platform offering seamless product browsing, cart management, and secure checkout built with modern web technologies.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <!-- Add technologies used -->
+                            <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">React</span>
+                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Node.js</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Stripe</span>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a href="https://github.com/Vaibhav-Rep/BharathCart" class="text-indigo-600 font-semibold hover:underline inline-flex items-center">Live Demo <i data-lucide="external-link" class="w-4 h-4 ml-1"></i></a>
+                            <a href="https://github.com/Vaibhav-Rep/BharathCart" class="text-gray-600 font-semibold hover:underline inline-flex items-center">Source Code <i data-lucide="github" class="w-4 h-4 ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- EDIT PROJECT 2 DETAILS -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="https://drive.google.com/file/d/1skyUbJ2HRCO0XFxWSzKJsuXM5PEStdn0/view?usp=drive_link" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Face-Recognition-System</h3>
+                        <p class="text-gray-600 mb-4">An intelligent facial identification and authentication module for secure access control using image processing and ML techniques.</p>
+                         <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-sky-100 text-sky-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Vue.js</span>
+                            <span class="bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Firebase</span>
+                            <span class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Tailwind CSS</span>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a href="https://github.com/Vaibhav-Rep/Face-Recognition-System" class="text-indigo-600 font-semibold hover:underline inline-flex items-center">Live Demo <i data-lucide="external-link" class="w-4 h-4 ml-1"></i></a>
+                            <a href="https://github.com/Vaibhav-Rep/Face-Recognition-System" class="text-gray-600 font-semibold hover:underline inline-flex items-center">Source Code <i data-lucide="github" class="w-4 h-4 ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- EDIT PROJECT 3 DETAILS -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="https://drive.google.com/file/d/1L0JrIXX-8rTItqJqZGfg2aHdc2hVz3K-/view?usp=drive_link" alt="Screenshot of Project Three" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Language-conversion-to-sign-text-for-impaired-people</h3>
+                        <p class="text-gray-600 mb-4">An assistive AI-based system that converts spoken or written language into sign text to enhance communication accessibility for hearing-impaired individuals.</p>
+                         <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded-full">HTML5</span>
+                            <span class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Tailwind CSS</span>
+                            <span class="bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded-full">JavaScript</span>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a href="https://github.com/Vaibhav-Rep/Language-conversion-to-sign-text-for-impaired-people" class="text-indigo-600 font-semibold hover:underline inline-flex items-center">Live Demo <i data-lucide="external-link" class="w-4 h-4 ml-1"></i></a>
+                            <a href="https://github.com/Vaibhav-Rep/Language-conversion-to-sign-text-for-impaired-people" class="text-gray-600 font-semibold hover:underline inline-flex items-center">Source Code <i data-lucide="github" class="w-4 h-4 ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- =========== CONTACT SECTION =========== -->
+        <section id="contact" class="py-20 md:py-32">
+             <div class="text-center max-w-2xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Get In Touch</h2>
+                <p class="text-lg text-gray-600 mt-2 mb-8">
+                    I'm currently seeking new opportunities and am open to exciting projects. If you think I'd be a good fit for your team, I'd love to chat!
+                </p>
+                <!-- EDIT YOUR EMAIL ADDRESS -->
+
+                <a href="Mail to:vaibhav20031126@gmail.com" class="bg-indigo-600 text-white px-8 py-4 rounded-full text-lg hover:bg-indigo-700 transition duration-300 inline-flex items-center shadow-lg">
+                    <i data-lucide="mail" class="w-6 h-6 mr-3"></i> Mail to: vaibhav20031126@gmail.com
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- =========== FOOTER =========== -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Vaibhav Kumar. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu and Lucide Icons -->
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
+        for (let link of mobileMenuLinks) {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        }
+    </script>
+
+</body>
+</html>
