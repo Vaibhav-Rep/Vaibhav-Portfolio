@@ -5,18 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vaibhav Kumar - Personal Portfolio</title>
     
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     
-    <!-- Lucide Icons CDN -->
     <script src="https://unpkg.com/lucide@latest"></script>
 
-    <!-- Custom Styles -->
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -40,13 +36,10 @@
 </head>
 <body class="text-gray-800 antialiased">
 
-    <!-- =========== HEADER / NAVIGATION =========== -->
     <header class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <!-- Vaibhav Kumar -->
             <a href="#" class="text-2xl font-bold text-gray-900">Vaibhav Kumar-Portfolio</a>
             
-            <!-- Desktop Menu -->
             <div class="hidden md:flex space-x-6 items-center">
                 <a href="#about" class="text-gray-600 hover:text-indigo-600 transition duration-300">About</a>
                 <a href="#projects" class="text-gray-600 hover:text-indigo-600 transition duration-300">Projects</a>
@@ -54,13 +47,11 @@
                 <a href="#contact" class="bg-indigo-600 text-white px-4 py-2 rounded-full hover:bg-indigo-700 transition duration-300 shadow-sm">Contact</a>
             </div>
 
-            <!-- Mobile Menu Button -->
             <button id="mobile-menu-button" class="md:hidden">
                 <i data-lucide="menu" class="w-6 h-6"></i>
             </button>
         </nav>
 
-        <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
             <a href="#about" class="block py-2 text-gray-600 hover:text-indigo-600">About</a>
             <a href="#projects" class="block py-2 text-gray-600 hover:text-indigo-600">Projects</a>
@@ -71,19 +62,15 @@
 
     <main class="container mx-auto px-6 py-12 md:py-20">
 
-        <!-- =========== HERO SECTION =========== -->
         <section id="home" class="text-center">
             <div class="max-w-3xl mx-auto">
-                <!-- EDIT YOUR PROFESSION/TAGLINE HERE -->
                 <h1 class="text-4xl md:text-6xl font-bold text-gray-900 leading-tight mb-4">
                     Hi, I'm Vaibhav Kumar<br> A Passionate <span class="text-indigo-600">Web Developer & Data Analytics</span>
                 </h1>
-                <!-- EDIT YOUR SHORT BIO HERE -->
                 <p class="text-lg md:text-xl text-gray-600 mb-8">
                     I design and develop clean, efficient, and data-driven web solutions that turn complex problems into seamless user experiences. Combining my skills in web development and data analytics, I create scalable applications that empower smarter decisions and measurable impact.
                 </p>
                 <div class="flex justify-center items-center space-x-4">
-                    <!-- EDIT YOUR SOCIAL MEDIA LINKS HERE -->
                     <a href="https://github.com/Vaibhav-Rep?tab=repositories" target="_blank" class="text-gray-500 hover:text-indigo-600 transition duration-300">
                         <i data-lucide="github" class="w-8 h-8"></i>
                     </a>
@@ -97,16 +84,17 @@
             </div>
         </section>
 
-        <!-- =========== ABOUT ME SECTION =========== -->
         <section id="about" class="py-20 md:py-32">
-            <div class="grid md:grid-cols-5 gap-12 items-center">
-                <div class="md:col-span-2">
-                    <!-- USE A PROFESSIONAL HEADSHOT IMAGE. 1:1 Aspect ratio is best. -->
-                    <img src="Diwali pic.jpg" alt="A professional headshot of Vaibhav Kumar" class="rounded-full shadow-2xl w-full max-w-xs mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="flex flex-col items-center">
+                    <img src="Diwali pic.jpg" alt="A professional headshot of Vaibhav Kumar" class="rounded-xl shadow-2xl w-full max-w-xs mx-auto">
+                    <div class="mt-4 bg-white/80 backdrop-blur-sm p-4 rounded-lg shadow-md text-center w-full max-w-xs">
+                        <h3 class="text-xl font-bold text-gray-900">Vaibhav Kumar</h3>
+                    </div>
                 </div>
-                <div class="md:col-span-3">
+                
+                <div>
                     <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">About Me</h2>
-                    <!-- EDIT YOUR DETAILED BIO HERE -->
                     <p class="text-gray-600 mb-4 leading-relaxed">
                         I’m a passionate Web Developer and Data Analyst who loves turning ideas into impactful digital experiences and data-driven insights. With hands-on experience in building responsive web applications and analyzing complex datasets, I bridge the gap between design, development, and decision-making. My focus lies in creating scalable solutions using modern web technologies and leveraging tools like Power BI, Python, and SQL to uncover meaningful patterns that drive smarter business outcomes.
                     </p>
@@ -120,24 +108,21 @@
             </div>
         </section>
 
-        <!-- =========== PROJECTS SECTION =========== -->
+
         <section id="projects" class="py-20">
             <div class="text-center mb-12">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Featured Projects</h2>
                 <p class="text-lg text-gray-600 mt-2">Here are some of the projects I'm proud of.</p>
             </div>
 
-            <!-- Project Cards Grid -->
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
-                <!-- EDIT PROJECT 1 DETAILS -->
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
                     <img src="Bharath Cart.png" alt="Screenshot of Project One" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-bold mb-2">E-Commerce Platform</h3>
                         <p class="text-gray-600 mb-4">A full-featured online shopping platform offering seamless product browsing, cart management, and secure checkout built with modern web technologies.</p>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <!-- Add technologies used -->
                             <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">React</span>
                             <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Node.js</span>
                             <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Stripe</span>
@@ -149,9 +134,8 @@
                     </div>
                 </div>
 
-                <!-- EDIT PROJECT 2 DETAILS -->
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
-                    <img src="Face Recognition.png" class="w-full h-48 object-cover">
+                    <img src="Face Recognition.png" alt="Screenshot of Face Recognition Project" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-bold mb-2">Face-Recognition-System</h3>
                         <p class="text-gray-600 mb-4">An intelligent facial identification and authentication module for secure access control using image processing and ML techniques.</p>
@@ -167,7 +151,6 @@
                     </div>
                 </div>
 
-                <!-- EDIT PROJECT 3 DETAILS -->
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
                     <img src="Language Conversion.png" alt="Screenshot of Project Three" class="w-full h-48 object-cover">
                     <div class="p-6">
@@ -187,16 +170,13 @@
 
             </div>
         </section>
-        <!-- =========== CONTACT SECTION =========== -->
         <section id="contact" class="py-20 md:py-32">
              <div class="text-center max-w-2xl mx-auto">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Get In Touch</h2>
                 <p class="text-lg text-gray-600 mt-2 mb-8">
                     I'm currently seeking new opportunities and am open to exciting projects. If you think I'd be a good fit for your team, I'd love to chat!
                 </p>
-                <!-- EDIT YOUR EMAIL ADDRESS -->
-
-                <a href="vaibhav20031126@gmail.com" class="bg-indigo-600 text-white px-8 py-4 rounded-full text-lg hover:bg-indigo-700 transition duration-300 inline-flex items-center shadow-lg">
+                <a href="mailto:vaibhav20031126@gmail.com" class="bg-indigo-600 text-white px-8 py-4 rounded-full text-lg hover:bg-indigo-700 transition duration-300 inline-flex items-center shadow-lg">
                     <i data-lucide="mail" class="w-6 h-6 mr-3"></i> Mail to: vaibhav20031126@gmail.com
                 </a>
             </div>
@@ -204,14 +184,12 @@
 
     </main>
 
-    <!-- =========== FOOTER =========== -->
     <footer class="bg-gray-800 text-white py-6">
         <div class="container mx-auto px-6 text-center">
             <p>&copy; 2025 Vaibhav Kumar. All Rights Reserved.</p>
         </div>
     </footer>
 
-    <!-- JavaScript for Mobile Menu and Lucide Icons -->
     <script>
         // Initialize Lucide Icons
         lucide.createIcons();
